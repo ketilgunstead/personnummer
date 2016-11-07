@@ -1,6 +1,6 @@
 <?php
 /*
-Written by Ketil Gunstead - ketil@gunstead.no, upheads AS, upheads.no
+Written by Ketil Gunstead - ketil@gunstead.no
 	
 	
 Usage:
@@ -21,8 +21,8 @@ get_century()				- This functions returns the century which the person is born i
 code_birthnumber()			- This function codes/crypts the BirthNumber to 6 characters. If the $use_checksum = true it returns 8 characters
 decode_birthnumber($code)	- This functions decodes the BirthNumber given from code_birthnumber() function. This function depenss on the code beeing parsed to the function
 get_error()					- Returns the error text if any functions returns false
-check_h_number($month)		- Checks if the birthnumber is a H number format, paramteres is the mont in birthnumber eg. 12
-check_d_number($day)		- Checks if the birthnumber is a D number format, paramteres is the day in birthnumber eg. 01
+check_h_number($month)		- Checks if the birthnumber is a H number format, parameters is the month in birthnumber eg. 12
+check_d_number($day)		- Checks if the birthnumber is a D number format, parameters is the day in birthnumber eg. 01
 math_control_numbers($num) 	- Takes a 9 digit number and calculates the control numbers from it
 
 */
@@ -248,7 +248,6 @@ class BirthNumber implements predefined_NO
 	function decode_birthnumber($coded){
 		$this->use_checksum ? $num=8:$num=6;
 		if(strlen($coded)!=$num){
-			echo "faen";
 			$this->error_message=self::ERROR_WRONG_CODE;
 			return false;
 		}
@@ -334,7 +333,6 @@ class BirthNumber implements predefined_NO
 
 	function get_error(){
 		return $this->error_message;
-
 	}
 
 }
