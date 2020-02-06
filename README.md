@@ -1,5 +1,5 @@
-# personnummer
-Kod og dekod norsk personnummer i php, finner om fødselsnummeret er D nummer eller H nummer. Det er mulig å kryptere personnummeret og dekryptere personnummeret med eller uten sjekksiffer.
+# Fødselsnummer
+Kod og dekod norsk fødselsnummer i php, finner om fødselsnummeret er D nummer eller H nummer. Det er mulig å kryptere personnummeret og dekryptere personnummeret med eller uten sjekksiffer.
 Klassen sjekker kan hente ut all informasjon om personnummeret som f.eks. alder, kjønn, D nummber, H nummer, århundre, sjekksiffer, osv
 
 
